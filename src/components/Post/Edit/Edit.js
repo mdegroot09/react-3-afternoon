@@ -20,7 +20,9 @@ export default class Edit extends Component {
   }
 
   updatePost() {
-    this.props.updatePostFn(this.props.id, this.state.text)
+    let id = this.props.id
+    let text = this.state.text
+    this.props.updatePostFn(id, text)
     this.props.hideEdit()
   }
 
@@ -39,7 +41,7 @@ export default class Edit extends Component {
           {/* This saves your changes made */}
           <button id="Edit__controls-update" 
                   className="Edit__control-btn"
-                  onClick={ this.updatePost }>
+                  onClick={() => this.updatePost() }>
             Update
           </button>
 
