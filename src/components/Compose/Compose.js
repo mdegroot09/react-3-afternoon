@@ -51,4 +51,4 @@ export default class Compose extends Component {
       </section>
     )
   }
-}
+} 

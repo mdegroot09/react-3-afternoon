@@ -121,4 +121,4 @@ export default class Post extends Component {
       return null
     }
   }
-}
+} 
